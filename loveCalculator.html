@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Love Calculator</title>
+    <style>
+            .mainDiv{
+                width: 35rem;
+                border: 2px solid black;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15rem;
+            }
+
+            h2{
+                text-align: center;
+                font-weight: bold;
+                color: orange;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .fielsd{
+                font-size: 1.2rem;
+                margin: .5rem;
+                text-align: center;                
+            }
+
+            #fname{
+                margin-left: 1rem;
+            }
+
+            iframe{
+                width: 40rem;
+                height: 25rem;
+            }
+
+            button{
+                font-size: 1rem;
+                padding-left: 5rem;
+                padding-right: 5rem ;
+                margin: .5rem;
+                display: block;
+                text-align: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #result{
+                justify-content: center;
+                margin-left: 10rem;
+                
+            }
+          
+            .line{
+                height: 0.1rem;
+                background-color: black;
+               margin-top: 1rem;
+            }
+
+    </style>
+</head>
+<body>
+     <div class="mainDiv">
+            <h2> Love Calculator </h2>
+            <input type="text" id="fname" class="fielsd" placeholder="your name"> +
+            <input type="text" id="lname" class="fielsd" placeholder="love name">
+            <button onclick="change()"> click</button>
+            <input type="text" name="" id="result" class="fielsd">
+            <div class="line"></div>
+            <h2> God Bless Your Relashionship</h2>
+         
+     </div>
+     
+
+
+     <script>
+        function change(){
+            var ans =  Math.floor(Math.random()*101) ;
+            // var resultString = ans+ " %" ;
+            // console.log (ans) ;
+            document.getElementById("result").value = ans +" %" ;
+        }
+     </script>
+</body>
+</html>
